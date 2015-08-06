@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PokeMon Center</title>
+	<link rel="shortcut icon" href="http://vignette2.wikia.nocookie.net/pokemontowerdefensetwo/images/7/7f/Pokeball_icon.png/revision/latest?cb=20130706103856">
+	<link href="styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+	<div id="mainNav" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span id="siteTitle" class="mdl-layout-title">Pokemon Center</span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	      <!-- Navigation. We hide it in small screens. -->
+	      <nav class="mdl-navigation mdl-layout--large-screen-only">
+	        <a class="mdl-navigation__link" href="/#/learn">Learn</a>
+	        <a class="mdl-navigation__link" href="/#/battleArena">Fight</a>
+	        <a class="mdl-navigation__link" href="/#/">Home</a>
+	        <a class="mdl-navigation__link" href="">Login</a>
+	      </nav>
+	    </div>
+	  </header>
+	  <!-- <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Pokemon Center</span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Learn</a>
+	      <a class="mdl-navigation__link" href="">Train</a>
+	      <a class="mdl-navigation__link" href="">Fight</a>
+	      <a class="mdl-navigation__link" href="">Login</a>
+	    </nav>
+	  </div> -->
+	  <main class="mdl-layout__content">
+	    <div class="page-content">
+	    	<ng-view></ng-view>
+	    </div>
+	  </main>
+	</div>
+	
+	
+
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+	<!-- angular scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+	<!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
+	<!-- angular app -->
+	<script src="app/app.js"></script>
+	<!-- controllers -->
+	<script src="controllers/controller.js"></script>
+	<script src="controllers/battleCtrl.js"></script>
+	<script src="controllers/chatCtrl.js"></script>
+	<!-- services -->
+	<script src="services/service.js"></script>
+	<script src="services/parseService.js"></script>
+	<script src="services/chatDefaultHeaders.js"></script>
+	<!-- directives -->
+	<script src="directives/navDirect.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+* {
+	font-family: Verdana;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: lightblue;
+}
+
+#siteTitle {
+	font-size: 35px;
+}
+
+header div {
+	background-color: red;
+}
+
+/*Home Template*/
+#homegifDrag {
+	float: left;
+	margin: 20px;
+}
+
+#homegifGrowl {
+	height: 200px;
+	width: 200px;
+	float: right;
+	margin: 20px;
+}
+
+.container {
+	width: 90%;
+	margin-left: 50px;
+}
+
+
+/*Poke Template*/
+.myPokemon {
+
+	display: inline-block;
+	/*background-image: url("https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG");*/
+}
+
+.pokecard {
+	width: 280px;
+	padding: 20px;
+	margin: 30px 30px;
+	border: 10px solid red;
+	border-radius: 20px;
+	background-color: whitesmoke;
+}
+
+#search-bar {
+	border: 2px red solid;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+button {
+	/*float: right;*/
+	display: inline-block;
+}
+
+.pokecard h3 {
+	max-height: 25px;
+}
+
+#cardHalfOne {
+	width: 130px;
+	display: inline-block;
+}
+
+#cardHalfTwo {
+	width: 120px;
+	display: inline-block;
+}
+
+.types {
+	/*height: 25px;
+	display: inline-block;
+	float: right;*/
+	margin-right: 10px;
+}
+
+.pokegif {
+	min-height: 95px;
+	display: block;
+	margin: 10px 0px;
+}
+
+.stats {
+	border: 1px solid black;
+	padding: 2px;
+	margin-top: 10px;
+}
+
+li {
+	font-size: 12px;
+	list-style-type: none;
+}
+
+.pokecard1 img { 
+        -moz-transform: scaleX(-1); /*this block flips images*/
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+/*Battle Template*/
+#battlefield {
+	margin: 0 auto;
+	max-height: 800px;
+}
+
+.chats {
+	font-size: 12px;
+	border: 1px solid black;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+	width: 400px;
+	position: fixed;
+	margin-left: 30px;
+}
+
+
+

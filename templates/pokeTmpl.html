@@ -1,0 +1,42 @@
+<div class="myPokemon">
+<!-- <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG"> -->
+	<div class="pokecard pokecard1">	
+		<div>
+			<form ng-submit='getMon(id)'/>
+				<input id='search-bar' type='text' placeholder='  enter pokemon #' ng-model="id"/>
+				<button>Choose</button>
+			</form>
+
+		</div>
+
+		<h3>{{pokeObj.pokemon}}</h3>
+		<div class='types'>{{pokeObj.types[0]}}</div>
+		<div class='types'>{{pokeObj.types[1]}}</div>
+		<hr>
+		<div style="font-size: 12px">{{pokeObj.descrip}}</div>
+		<div id="cardHalfOne">
+			<!-- <img src={{pokeObj.sprite}}></img> -->
+			<img class='pokegif' src={{gifsrc}}></img>
+
+		</div>
+		<div id="cardHalfTwo">
+			<ul>	
+				<li>ID: {{pokeObj.id}}</li>
+				<li>HP: {{pokeObj.hp}}</li>
+				<li>ATK: {{pokeObj.atk}}</li>
+				<li>DEF: {{pokeObj.def}}</li>
+				<li>SPATK: {{pokeObj.spatk}}</li>
+				<li>SPDEF: {{pokeObj.spdef}}</li>
+				<li>SPD: {{pokeObj.spd}}</li>
+			</ul>
+		</div>
+		<div class="stats">
+			<ul>	
+				<li>Move: {{pokeObj.id}}</li>
+				<li>Move: {{pokeObj.hp}}</li>
+				<li>Move: {{pokeObj.atk}}</li>
+				<li>Move: {{pokeObj.def}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
